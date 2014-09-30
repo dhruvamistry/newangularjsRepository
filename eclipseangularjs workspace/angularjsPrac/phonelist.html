@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="phoneApp">
+ <head>
+   <meta charset="utf-8">
+  <title>My HTML File</title>
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+  
+  <script src="controllers.js"></script>
+  
+ </head>
+ <body  ng-controller="PhoneListCtrl" >
+ 
+  <ul>
+    <li ng-repeat="phone in phones">
+      {{phone.name}}
+      <p>{{phone.snippet}}</p>
+
+    </li>
+  </ul>
+
+ </body>
+ </html>
